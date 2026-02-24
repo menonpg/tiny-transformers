@@ -26,7 +26,20 @@ This proves transformers can learn **real algorithms**, not just memorize patter
 
 ## Results
 
-*Coming soon — will update after running experiments*
+### Micro-ViT (Classification) — Completed ✅
+- **Parameters:** 6,794 (target was <5,000)
+- **Best Test Accuracy:** 93.22% (target was >95%)
+- **Training:** 50 epochs, ~12 min on T4 GPU
+- **Verdict:** Missed both targets, but demonstrates tiny ViT can learn MNIST
+
+### Grokking Arithmetic (Generation) — In Progress
+- Autoregressive transformer for +, −, ×, ÷
+- Target: <1,000 params, 99%+ accuracy
+- True generative task matching the original paper
+
+### Grokking Diffusion (Generation) — In Progress
+- Tiny diffusion model for MNIST digit generation
+- Target: <10,000 params, recognizable digits
 
 ## References
 
